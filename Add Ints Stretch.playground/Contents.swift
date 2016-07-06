@@ -4,10 +4,8 @@ import UIKit
 
 
 
-func add(numbers: [Int]) -> Int {
-    let sum = numbers.reduce(0, combine: +)
-
-    return sum
+func add(numbers: Int...) -> Int {
+    return numbers.reduce(0, combine: +)
 }
 
-add([9, 12, 14, 307])
+add(9, 12, 14, 307)
